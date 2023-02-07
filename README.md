@@ -415,11 +415,11 @@ Navigate to the GitHub Repository you want to clone to use locally:
 </ul>
 <h3>Credits</h3>
 <p>chart.js (<a href="https://www.chartjs.org/" target="_blank">link</a>)</p>
-libary was used to make the Charts 
-<p></p>Code insitute
+libary was used to create the Charts 
+<p>Code insitute</p>
 the code insitute curriculum was used to develop the entire website.
 <p>GoLinuxCloud (<a href="https://www.golinuxcloud.com/javascript-csv-to-array/#:~:text=Method%2D1%3A%20Use%20split()%20method%20to%20convert%20CSV%20to%20Array,-Before%20we%20go&text=split()%20%2C%20and%20it%20takes,typically%20a%20comma%20(%20%2C%20)." target="_blank">link</a>)</p>
-was used to parse the CSV into an array.
+this method was used to parse the CSV but some changes were made to make it more functional.
 <p>Felix Luciano <a href="https://codepen.io/FelixLuciano" target="_blank">link</a> </p>
 the hero text animation were inspired by and adjusted to meet the requirements of the website. 
 <h3>Media</h3>
