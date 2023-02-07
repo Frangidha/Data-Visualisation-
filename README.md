@@ -414,13 +414,13 @@ Navigate to the GitHub Repository you want to clone to use locally:
 <li>The project will now of been cloned on your local machine for use.</li>
 </ul>
 <h3>Credits</h3>
-chart.js (<a href="https://www.chartjs.org/" target="_blank">link</a>)
+<p>chart.js (<a href="https://www.chartjs.org/" target="_blank">link</a>)</p>
 libary was used to make the Charts 
-Code insitute
+<p></p>Code insitute
 the code insitute curriculum was used to develop the entire website.
-GoLinuxCloud (<a href="https://www.golinuxcloud.com/javascript-csv-to-array/#:~:text=Method%2D1%3A%20Use%20split()%20method%20to%20convert%20CSV%20to%20Array,-Before%20we%20go&text=split()%20%2C%20and%20it%20takes,typically%20a%20comma%20(%20%2C%20)." target="_blank">link</a>)
+<p>GoLinuxCloud (<a href="https://www.golinuxcloud.com/javascript-csv-to-array/#:~:text=Method%2D1%3A%20Use%20split()%20method%20to%20convert%20CSV%20to%20Array,-Before%20we%20go&text=split()%20%2C%20and%20it%20takes,typically%20a%20comma%20(%20%2C%20)." target="_blank">link</a>)</p>
 was used to parse the CSV into an array.
-Felix Luciano <a href="https://codepen.io/FelixLuciano" target="_blank">link</a> 
+<p>Felix Luciano <a href="https://codepen.io/FelixLuciano" target="_blank">link</a> </p>
 the hero text animation were inspired by and adjusted to meet the requirements of the website. 
 <h3>Media</h3>
 <p>all media were taken form <a href="https://www.shutterstock.com/explore/flex-subscriptions?c3apidt=p68161268801&gclid=EAIaIQobChMI0vGyntaD_AIVjd1RCh05jgE2EAAYASAAEgLsDvD_BwE&gclsrc=aw.ds&kw=free%20pictures">free image sources</a> and <a href="https://venngage.com/blog/data-visualization/">blog of Data-Visualization</a></p>
