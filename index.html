@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="why Data Visualization and CSV as data source?">
+  <meta name="keywords" content="data-visualization,CSV">
+  <meta name="author" content="Francis">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Home Page</title>
+</head>
+
+<body>
+
+  
+    <header>
+      <a href="index.html">
+        <h1 id="logo">Data Visualization</h1>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="generator.html">Chart Generator</a>
+          </li>
+          <li>
+            <a href="graph.html">Chart Types</a>
+          </li>
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- shows the hero images -->
+    <div id="hero-outer">
+      <div id="hero-text"><h2 id="cover-questions"><span is="type-async" id="type-text">...</span>
+      <span class="blinking-cursor">_</span></h2></div>
+
+
+    </div>
+    <!-- explain what data visulation is text is copied from https://venngage.com/blog/data-visualization/-->
+    <section id="about-data">
+
+      <h2>What is data visualization?</h2>
+
+      <p>
+        Data visualization is the visual presentation of data or information. The goal of data visualization is to
+        communicate data or information clearly and effectively to readers. Typically, data is visualized in the form of
+        a chart, infographic, diagram or map.
+      </p>
+
+
+      <p>
+        The field of data visualization combines both art and data science. While a data visualization can be creative
+        and pleasing to look at, it should also be functional in its visual communication of the data.
+      </p>
+      <h3>why use Data visualation</h3>
+
+      <p>
+        Data, especially a lot of data, can be difficult to wrap your head around. Data visualization can help both you
+        and your audience interpret and understand data.
+
+        Data visualizations often use elements of visual storytelling to communicate a message supported by the data.
+
+        There are many situations where you would want to prese
+
+        nt data visually.
+      </p>
+      <h3>Data visualization can be used for:</h3>
+      <div id="#circle-container">
+        
+          <img id="data-visualization" src="assets/images/importance-of-data-visualization_1.webp" alt="image of why is data visualization important?">
+       
+</div>
+        <ul class="source-data">
+          <li>Making data engaging and easily digestible</li>
+          <li>Identifying trends and outliers within a set of data</li>
+          <li>Telling a story found within the data</li>
+          <li>Reinforcing an argument or opinion</li>
+          <li>Highlighting the important parts of a set of data</li>
+        </ul>
+    </section>
+<!--Section that explains what is a CSV file and how to prepare your files-->
+    <section id="about-csv">
+
+      <h2>CSV as <b>data-source</b></h2>
+
+      <p>
+        Now we explained why Data interpration is so important we need a data source.
+        Today we have rolled out support for uploading Comma Separated Value (CSV) data files as a data source. CSV is
+        an incredibly universal format for data, and we’ve heard overwhelmingly from our users that an important
+        component to their business data has been locked up in these files.
+      </p>
+
+
+      <p>
+        We took our time building out this feature as it is a first step in providing upcoming support for other
+        people, and because we wanted to get the interface just right. I’d like to walk you through some of
+        the details of our implementation.
+      </p>
+      <p>
+        These files serve a number of different business purposes. They help people export a high volume of data to a
+        more concentrated database, for instance.
+
+        They also serve two other primary business functions:
+
+        CSV files are plain-text files, making them easier for the website developer to create
+        Since they're plain text, they're easier to import into a spreadsheet or another storage database, regardless
+        of
+        the specific software you're using
+        To better organize large amounts of data
+      </p>
+
+      <h3>How do I save CSV files?</h3>
+      <p>Saving CSV files is relatively easy, you just need to know where to change the file type.
+
+        Under the "File name" section in the "Save As" tab, you can select "Save as type" and change it to "CSV (Comma
+        delimited) in our case the delimterd is <b>;</b> or  <b>,</b>(*.csv). This has been chosen because numbers can have also
+        <b>,</b>.
+        Once that option is selected, you are on your way to quicker
+        and easier data organization.
+      </p>
+      <!--how to create the CSV files-->
+      <h4>saving from an excel file</h4>
+      <ol class="source-data">
+        <li>Open Excel with your values</li>
+        <li>the top row are your headers</li>
+        <li>fill in x values in the first column</li>
+        <li>fill in y values in the second column (see example)</li>
+        <li>save the file as csv (CSV UTF-8)</li>
+        
+      </ol>
+      
+ <div class="container">
+          <img src="assets/images/Excel.webp" alt="Example of data formatting using excel">
+        </div>
+      <h4>text editor</h4>
+      <ol class="source-data">
+        <li>Open pad with your values</li>
+        <li>Use ; or , as split for your values</li>
+        <li>the top row are your headers call them x and y</li>
+        <li>fill in your values so it looks like the example down below</li>
+        <li>save the file as unicode(Unicode-textdocument)</li>
+        
+      </ol>
+        <div class="container"><img src="assets/images/worpdad1.webp" alt="Example of data formatting using a text-editor">
+        </div>
+
+      <h3 id="conclusion">Now you how to save your data and the importantance of Data Visualization. It is time produce your Chart</h3>
+    </section>
+
+    <div class="container">
+      
+      <a href="generator.html" id="button-graph">Chart Generator</a>
+    </div>
+
+
+    <footer>
+
+      <!-- sources used to built the website-->
+
+      <!-- links to social media networks-->
+      <ul class="social-networks">
+        <li><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="link to facebook"><i
+              class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="link to twitter"><i
+              class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="link to youtube"><i
+              class="fab fa-youtube-square"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="instagram"><i
+              class="fab fa-instagram"></i></a></li>
+      </ul>
+    </footer>
+
+    <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
+    <!--Animations + chart type script-->
+    <script src="assets/js/graph.js"></script>
+  </body>
+
+</html>
