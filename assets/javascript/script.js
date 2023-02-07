@@ -1,15 +1,36 @@
 let myForm = document.getElementById("myForm");
 let csvFile = document.getElementById("csvFile");
+let barColors = ["red", "green", "blue", "orange", "brown", "yellow"];
 let data;
+let myChart;
+let n = 0;
+let xAxes;
+let yAxes;
+let DelimiterValue = ";";
+// CSV unloading and parsing
+function csvToArray(str, delimiter = DelimiterValue) {
 
-function csvToArray(str, delimiter = ";") {
-
-
+  // use split to create an array from string by delimiter
   let headers = str.slice(0, str.indexOf("\n")).split(delimiter);
+ 
+  // clean up split
+  for (var i = 0; i < headers.length; ++i)
+    headers[i] = headers[i].replace(/(\r\n|\n|\r)/gm, "");
 
 
+  // use split to create an array from string by delimiter
   let rows = str.slice(str.indexOf("\n") + 1).split("\n");
+  
+  // clean up split
+  for (i = 0; i < rows.length; ++i)
+    rows[i] = rows[i].replace(/(\r\n|\n|\r)/gm, "");
 
+
+  // Map the rows
+  // split values from each row into an array
+  // use headers.reduce to create an object
+  // object properties derived from headers:values
+  // the object passed as an element of the array
 
   let arr = rows.map(function (row) {
     let values = row.split(delimiter);
@@ -23,144 +44,28 @@ function csvToArray(str, delimiter = ";") {
   // return the array
   return arr;
 }
-
+// object properties derived from headers:values
+// the object passed as an element of the array
 myForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const input = csvFile.files[0];
   const reader = new FileReader();
-
+// object properties derived from headers:values
+// the object passed as an element of the array
   reader.onload = function (e) {
+    chartTitle = document.getElementById("chart-title").value;
+    xAxes = document.getElementById("x-axes").value;
+    yAxes = document.getElementById("y-axes").value;
     const text = e.target.result;
     data = csvToArray(text);
-    console.log(data)
-    checkButton(data)
 
-    
+    checkButton(data);
+
+
 
   };
 
 
   reader.readAsText(input);
+
 });
-
-function BarChart() {
-
-  let getArrayByValue = function (data, key) {
-    let result = [];
-    for (var i = 0; i < this.length; i++) {
-      result.push(data[i][key])
-    }
-    return result;
-  }
-
-  let x = getArrayByValue(data, 'x')
-  let y = getArrayByValue(data, 'y').map(i => Number(i))
-
-  console.log(x)
-  console.log(y)
-
-  let barColors = ["red", "green", "blue", "orange", "brown"];
-  new Chart("myChart", {
-    type: "bar",
-    data: {
-      labels: x,
-      datasets: [{
-        backgroundColor: barColors,
-        data: y
-      }]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      title: {
-        display: true,
-        text: "World Wine Production 2018"
-      }
-    }
-  });
-}
-
-function LinePlot() {
-
-  let getArrayByValue = function (data, key) {
-    let result = [];
-    for (i in data) {
-      result.push(data[i][key])
-    }
-    return result;
-  }
-
-  let x = getArrayByValue(data, 'x').map(i => Number(i))
-  let y = getArrayByValue(data, 'y').map(i => Number(i))
-
-  console.log(x)
-  console.log(y)
-
-  new Chart("myChart", {
-    type: "line",
-    data: {
-      labels: x,
-      datasets: [{ 
-        data: y,
-        borderColor: "red",
-        fill: false
-      }]
-    },
-    options: {
-      legend: {display: false}
-    }
-  });
-}
-
-function PieChart (){
-  
-  let getArrayByValue = function (data, key) {
-    let result = [];
-    for (i in data) {
-      result.push(data[i][key])
-    }
-    return result;
-  }
-
-  let x = getArrayByValue(data, 'x')
-  let y = getArrayByValue(data, 'y').map(i => Number(i))
-  let barColors = ["red", "green", "blue", "orange", "brown"];
-  console.log(x)
-  console.log(y)
-  new Chart("myChart", {
-    
-    type: "pie",
-    data: {
-      labels: x,
-      datasets: [{
-        backgroundColor: barColors,
-        data: y
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "World Wide Wine Production"
-      }
-    }
-  });
-
-}
-function checkButton() {
-  if (document.getElementById('barchart').checked) {
-    BarChart()
-  } else if (document.getElementById('scatterplot').checked) {
-    ScatterPlot()
-  } else if (document.getElementById('pie-chart').checked) {
-    PieChart ()
-  } 
-  else if (document.getElementById('lineplot').checked) {
-    LinePlot()
-  }
-  else {
-    alert("You have not selected any graph type") ;
-  }
-
-
-}
