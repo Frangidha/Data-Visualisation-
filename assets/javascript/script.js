@@ -314,3 +314,30 @@ function DelimiterSwitch(delimiter) {
   }
 
 }
+
+// how to check each data point for being NaN
+function checkData(data) {
+  n = 0;
+
+  for (i = 0; i < data.length; i++) {
+    if (isNaN(data[i]['y'])) {
+      n++;
+      if (data.length === n) {
+        alert("all numeric values are not available! Please check your CSV file or delimiter selector.");
+      }
+    }
+  }
+  return n;
+}
+// Checking of the data for NaN values
+function CheckNan(y) {
+  for (i = 0; i < y.length; i++) {
+    if (isNaN(y[i])) {
+      n++;
+      if (y.length === n) {
+        alert("all numeric values are not available! Please check your CSV file or delimiter selector.");
+      }
+    }
+
+  }
+}
