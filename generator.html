@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="for what type it contains">
+  <meta name="keywords" content="Chart Generator">
+  <meta name="author" content="Francis">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/stylesheetgenerator.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <title>Chart Generator</title>
+</head>
+
+<body>
+
+
+  <header>
+    <a href="index.html">
+      <h1 id="logo">Data Visualization</h1>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="generator.html" class="active">Chart Generator</a>
+        </li>
+        <li>
+          <a href="graph.html">Chart Types</a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- shows the hero images -->
+  <div id="hero-outer">
+    <div id="hero-image"></div>
+
+
+    <h2 class="glowIn" id="cover-text"><span>Chart Generator</span></h2>
+
+  </div>
+  <!--input form Chart Generator-->
+  <section id="graph-input">
+    <form id="myForm">
+
+      <div class="container">
+
+        <div class="row">
+          <h2>Chart Form</h2>
+        </div>
+
+        <div class="row">
+          <h3>Data</h3>
+          <label for="csvFile" hidden>Input CSV file</label>
+          <div class="input-group input-group-icon"><input type="file" id="csvFile" accept=".csv" required >
+            <div class="input-icon"><i class="fa-solid fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="input-group">
+            <h3>Delimiter</h3>
+            <fieldset>
+              <legend hidden>Chart Type</legend>
+              <input type="radio" id="comma" name="delimiter" value="comma" onclick="DelimiterSwitch('comma')" checked >
+              <label for="comma">comma(,)</label>
+
+              <input type="radio" id="dot-comma" name="delimiter" value="dot-comma" onclick="DelimiterSwitch('dot-comma')" checked >
+              <label for="dot-comma">dot comma(;)</label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Chart information</h3>
+          <label for="chart-title" hidden>Input chart title</label>
+          <div class="input-group input-group-icon"><input type="text" id="chart-title" placeholder="Chart title" >
+            <div class="input-icon"><i class="fa-solid fa-heading"></i></div>
+          </div>
+          <label for="x-axes" hidden>Input x-axes title</label>
+          <div class="input-group input-group-icon"><input type="text" id="x-axes" placeholder="X-axes" >
+            <div class="input-icon"><i class="fa-sharp fa-solid fa-x"></i></div>
+          </div>
+          <label for="y-axes" hidden>Input y-axes title</label>
+          <div class="input-group input-group-icon"><input type="text" id="y-axes" placeholder="Y-axes" >
+            <div class="input-icon"><i class="fa-sharp fa-solid fa-y"></i></div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="input-group">
+            <h3>Chart Type</h3>
+            <fieldset>
+              <legend hidden>Chart Type</legend>
+              <input type="radio" id="barchart" name="graph-type" value="barchart" checked >
+              <label for="barchart">Barchart</label>
+
+              <input type="radio" id="pie-chart" name="graph-type" value="pie-chart" checked >
+              <label for="pie-chart">Pie Chart</label>
+
+              <input type="radio" id="scatterplot" name="graph-type" value="scatterplot" checked>
+              <label for="scatterplot">Scatterplot</label>
+
+              <input type="radio" id="lineplot" name="graph-type" value="lineplot" checked>
+              <label for="lineplot">Lineplot</label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Generate</h3>
+          <input type="submit" value="Generate" >
+        </div>
+
+      </div>
+    </form>
+
+
+
+
+<!--chart canvas-->
+    <div class="game-area">
+
+      <canvas id="myChart"></canvas>
+
+    </div>
+
+<!--buttons-->
+    <div class="utility-buttons">
+
+      <button id="btn-download" onclick="download()">
+        Download
+      </button>
+
+      <button id="btn-destroy" onclick="destroy()">
+        Discard Chart
+      </button>
+
+    </div>
+
+  </section>
+  <footer>
+    <!-- links to social media networks-->
+    <ul class="social-networks">
+      <li><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="link to facebook"><i
+            class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="link to twitter"><i
+            class="fab fa-twitter-square"></i></a></li>
+      <li><a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="link to youtube"><i
+            class="fab fa-youtube-square"></i></a></li>
+      <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="instagram"><i
+            class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+
+  <!-- Font awesome script -->
+  <script src="https://kit.fontawesome.com/6030b86e15.js" crossorigin="anonymous"></script>
+  <!-- Chart Generator script -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
