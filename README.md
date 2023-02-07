@@ -419,4 +419,4 @@ Navigate to the GitHub Repository you want to clone to use locally:
 <h5>Felix Luciano (<a href="https://codepen.io/FelixLuciano" target="_blank">link</a>) </h5>
 <p>the hero text animation were inspired by and adjusted to meet the requirements of the website. </p>
 <h3>Media</h3>
-<p>all media were taken form <a href="https://www.shutterstock.com/explore/flex-subscriptions?c3apidt=p68161268801&gclid=EAIaIQobChMI0vGyntaD_AIVjd1RCh05jgE2EAAYASAAEgLsDvD_BwE&gclsrc=aw.ds&kw=free%20pictures"> and <a href="https://venngage.com/blog/data-visualization/" target="_blank">free image sources</a>)blog of Data-Visualization</a></p>
+<p>all media were taken form <a href="https://www.shutterstock.com/explore/flex-subscriptions?c3apidt=p68161268801&gclid=EAIaIQobChMI0vGyntaD_AIVjd1RCh05jgE2EAAYASAAEgLsDvD_BwE&gclsrc=aw.ds&kw=free%20pictures"> and <a href="https://venngage.com/blog/data-visualization/" target="_blank">free image sources</a> blog of Data-Visualization</a></p>
