@@ -358,3 +358,17 @@ function download() {
 
   imageLink.click();
 }
+
+//Hero text Animation inspired by Luciano Felix
+// Chart Title glow in 
+var glowInTexts = document.querySelectorAll(".glowIn");
+glowInTexts.forEach(function (glowInText) {
+  var letters = glowInText.textContent.split("");
+  glowInText.textContent = "";
+  letters.forEach(function (letter, i) {
+    var span = document.createElement("span");
+    span.textContent = letter;
+    span.style.animationDelay = "".concat(i * 0.05, "s");
+    glowInText.append(span);
+  });
+});
