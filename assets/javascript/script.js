@@ -301,3 +301,16 @@ function ScatterPlot() {
   });
 
 }
+// changes the delimiter of the CSV file
+function DelimiterSwitch(delimiter) {
+
+  if (delimiter === "comma") {
+
+    DelimiterValue = ',';
+
+
+  } else if (delimiter === "dot-comma") {
+    DelimiterValue = ';';
+  }
+
+}
