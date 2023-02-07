@@ -69,3 +69,18 @@ myForm.addEventListener("submit", function (e) {
   reader.readAsText(input);
 
 });
+
+// Selector which chart that needs to be created
+function checkButton() {
+  if (document.getElementById('barchart').checked) {
+    BarChart();
+  } else if (document.getElementById('scatterplot').checked) {
+    ScatterPlot();
+  } else if (document.getElementById('pie-chart').checked) {
+    PieChart();
+  } else if (document.getElementById('lineplot').checked) {
+    LinePlot();
+  } else {
+    alert("You have not selected any graph type");
+  }
+}
