@@ -1,0 +1,203 @@
+/*button choice area */
+.game-area {
+    
+    box-sizing: border-box;
+    width: 85%;
+    height: auto;
+
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.question-area {
+    width: 80%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+    
+    
+}
+.chart-info {
+    padding: 8px;
+}
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: aliceblue;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.btn--big::after{
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.5em;
+}
+
+.btn--blue {
+    border-color: blue;
+    color: blue;
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+.btn--orange {
+    border-color: orange;
+    color: orange;
+}
+
+.btn--orange:active,
+.btn--orange:hover {
+    background-color: darkorange;
+    color: aliceblue;
+}
+
+.btn--red {
+    border-color: red;
+    color: red;
+}
+
+.btn--red:active,
+.btn--red:hover {
+    background-color: darkred;
+    color: aliceblue;
+}
+
+.btn--green {
+    border-color: green;
+    color: green;
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+
+
+/* --------- Media queries for the buttons */
+@media (max-width: 815px) {
+    .btn--big {
+        display: inline-block;
+        margin: 20px;
+        
+    }}
+    
+@media (max-width: 414px) {
+    .controls-area {
+        width: 100%;
+    }
+
+    .btn--big {
+        margin: 0 10px;
+        padding: 5px;
+        border: 5px solid;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .btn--big::after {
+        font-size: 0.6rem;
+        left: -0.7rem;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+        min-height: 500px;
+    }
+   
+    .btn--gray {
+        margin-top: 0;
+    }
+
+   #operator  {
+    font-size: 2rem;
+}
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-area {
+        height: 70vh;
+    }
+
+    .controls-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .btn--big {
+        margin: 10px 10px;
+    }
+    .question-area {
+        padding: 10px 0;
+    }
+
+}
+/*hero image animiation */
+.glowIn {
+    color: black;
+  }
+  .glowIn span {
+    animation: glow-in 0.8s both;
+  }
+  @keyframes glow-in {
+    from {
+      opacity: 0;
+   }
+    65% {
+      opacity: 1;
+      text-shadow: 0 0 25px gray;
+   }
+    75% {
+      opacity: 1;
+   }
+    to {
+      opacity: 0.7;
+   }
+  }
+  
+  #cover-text {
+    font-size: 300%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+  
+    bottom: 200px;
+    
+    position: relative;
+  
+  }
