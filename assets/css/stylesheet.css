@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* headings and logo */
+
+header {
+    background-color: rgb(2, 125, 129);
+    border-radius: 6px;
+    margin: 4px;
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu {
+    color: aliceblue;
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#logo,
+#menu {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid aliceblue;
+}
+
+.active {
+    border-bottom: 1px solid aliceblue;
+}
+
+
+
+
+
+
+/* hero image */
+#hero-outer {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/data-hero-image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgb(2, 125, 129);
+    border-radius: 6px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+
+.social-networks {
+    text-align: center;
+
+
+}
+
+.social-networks li {
+    display: inline;
+    position: relative;
+}
+
+.social-networks i {
+    font-size: 160%;
+
+    padding: 5%;
+    padding-top: 2.5%;
+    color: aliceblue;
+}
+
+/* section about - data */
+
+#about-data p {
+
+    margin: 8px;
+}
+
+#about-data h2 {
+    padding-top: 8px;
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+#about-data h3 {
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+/* section about - CSV */
+#about-data,
+#about-csv {
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-top: auto;
+}
+
+#about-csv p {
+
+    margin: 8px;
+}
+
+#about-csv h2 {
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+#container{
+    margin: auto;
+    width: 50%;
+}
+/* Data-visualization image */
+#circle-container {
+    width: 100%;
+    height: auto;
+   
+    
+}
+#data-visualization{
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    min-width: 300px;
+    border-radius: 5%;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    max-height: 300px
+}
+/* Conclusion of index page*/
+#conclusion {
+    margin: 2.5em;
+}
+/* button to generator.html*/
+#button-graph {
+    color: #3a3a3a;
+    width: 25%;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    position: relative;
+
+    left: 45%;
+}
+
+#button-graph:hover {
+
+    background-color: rgb(2, 125, 129);
+    color: aliceblue;
+
+}
+
+
+
+.source-data {
+    padding: 8px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* 404ERROR */
+.errorPage {
+    background: url("../images/dataheroimage.jpg");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.errorPage__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.errorPage__button {
+    display: block;
+    cursor: pointer;
+    border: 1px solid rgb(5, 183, 189);
+    color: rgb(5, 183, 189);
+    padding: 10px 30px;
+    letter-spacing: 0.2em;
+    box-shadow: 7px 7px 20px #00000026;
+    background: aliceblue;
+    transition: transform 300ms ease;
+}
+
+.errorPage__button:active {
+    transform: translateY(2px);
+    box-shadow: 3px 3px 20px #00000026;
+}
+
+.errorPage__text h3 {
+    font-size: 10vw;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+    color: gray;
+}
+/* Javascript animition hero image */
+span {
+    background-color: aliceblue;
+    border-radius: 5%;
+}
+
+.blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+#hero-text {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(2, 125, 129);
+    overflow: hidden;
+    text-align: center;
+    font-size: 300%;
+    color: #3a3a3a;
+    font-family: Oswald, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* responsiveness*/
+@media screen and (max-width: 1050px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    img {
+        width: 80%;
+        min-height: 50px;
+    }
+    #button-graph {
+        
+        left: 42%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    img {
+        width: 75%;
+        min-height: 50px;
+    }
+
+    #about-csv,
+    #about-data {
+        width: 80%;
+        left: 10%;
+    }
+
+    #button-graph {
+        width: 50%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #menu {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #logo {
+        font-size: 220%;
+    }
+
+    #hero-text{font-size: 150%;
+    }
+    #button-graph {
+        width: 50%;
+        left: 30%;
+    }
+}
