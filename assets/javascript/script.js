@@ -341,3 +341,20 @@ function CheckNan(y) {
 
   }
 }
+
+// Discard the Chart and sets the NaN count to Zero
+function destroy() {
+  myChart.destroy();
+  n = 0;
+}
+// Download button converts chart into a PNG
+function download() {
+
+  let imageLink = document.createElement('a');
+  let canvas = document.getElementById('myChart');
+  imageLink.download = 'graph.png';
+  imageLink.href = canvas.toDataURL('image/png', 1);
+
+
+  imageLink.click();
+}
