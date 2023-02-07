@@ -61,7 +61,7 @@ function displayBarchartGraph() {
 }
 
 //Hero text Animation inspired by Luciano Felix
-//glow text on letters
+//glow text on letters when loading the page
 var glowInTexts = document.querySelectorAll(".glowIn");
 glowInTexts.forEach(function (glowInText) {
     var letters = glowInText.textContent.split("");
@@ -73,3 +73,69 @@ glowInTexts.forEach(function (glowInText) {
         glowInText.append(span);
     });
 });
+
+//Hero text Animation inspired by Luciano Felix
+//Animation will write text and delete text with an interval of 3 seconds
+async function init () {
+    const node = document.querySelector("#type-text");
+    
+    await sleep(1000);
+    node.innerText = "";
+    await node.type('What ?');
+    await sleep(2000);
+    await node.delete('?');
+    while (true) {
+      await node.type('is Data?');
+      await sleep(3000);
+      await node.delete('is Data?');
+      await node.type('is Data Visualization?');
+      await sleep(3000);
+      await node.delete('is Data Visualization?');
+      await node.type('is a CSV File?');
+      await sleep(3000);
+      await node.delete('is a CSV File?');
+      await node.type('is a BarChart?');
+      await sleep(3000);
+      await node.delete('is a BarChart?');
+      await node.type('is a Scatterplot?');
+      await sleep(3000);
+      await node.delete('is a Scatterplot?');
+      await node.type('is a Lineplot?');
+      await sleep(3000);
+      await node.delete('is a Lineplot?');
+      await node.type('is a Piechart?');
+      await sleep(3000);
+      await node.delete('is a Piechart?');
+      await node.type('is a chart generator');
+      await sleep(3000);
+      await node.delete('is a chart generator');
+    }
+    }
+    
+    let sleep = time => new Promise(resolve => setTimeout(resolve, time));
+    
+    class TypeAsync extends HTMLSpanElement {
+    get typeInterval () {
+      const randomMs = 100 * Math.random();
+      return randomMs < 50 ? 10 : randomMs;
+    }
+    
+    async type (text) {
+      for (let character of text) {
+        this.innerText += character;
+        await sleep(this.typeInterval);
+      }
+    }
+    
+    async delete (text) {
+      for (let character of text) {
+        this.innerText = this.innerText.slice(0, this.innerText.length -1);
+        await sleep(this.typeInterval);
+      }
+    }
+    }
+    
+    customElements.define('type-async', TypeAsync, { extends: 'span' });
+    
+    
+    init();
