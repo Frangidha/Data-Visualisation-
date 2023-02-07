@@ -84,3 +84,220 @@ function checkButton() {
     alert("You have not selected any graph type");
   }
 }
+
+//Barchart Generation
+function BarChart() {
+
+  let getArrayByValue = function (data, key) {
+    let result = [];
+    for (let i in data) {
+      result.push(data[i][key]);
+    }
+    return result;
+  };
+
+  let x = getArrayByValue(data, 'x');
+  let y = getArrayByValue(data, 'y').map(i => Number(i));
+
+  CheckNan(y);
+
+  myChart = new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: x,
+      datasets: [{
+        backgroundColor: barColors,
+        data: y
+      }]
+    },
+    options: {
+
+      scales: {
+        x: {
+          title: {
+            color: 'red',
+            display: true,
+            text: xAxes
+          }
+        },
+        y: {
+          title: {
+            color: 'red',
+            display: true,
+            text: yAxes
+          }
+        }
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: chartTitle
+        },
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+
+}
+//Lineplot Generation
+function LinePlot() {
+//split data in x and y array
+  let getArrayByValue = function (data, key) {
+    let result = [];
+    for (let i in data) {
+      result.push(data[i][key]);
+    }
+    return result;
+  };
+
+  let x = getArrayByValue(data, 'x');
+  let y = getArrayByValue(data, 'y').map(i => Number(i));
+//check data for NaN values
+  CheckNan(y);
+
+  myChart = new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: x,
+      datasets: [{
+        data: y,
+        borderColor: "red",
+        fill: false
+      }]
+    },
+    options: {
+
+      scales: {
+        x: {
+          title: {
+            color: 'red',
+            display: true,
+            text: xAxes
+          }
+        },
+        y: {
+          title: {
+            color: 'red',
+            display: true,
+            text: yAxes
+          }
+        }
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: chartTitle
+        },
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+
+}
+//PieChart Generation
+function PieChart() {
+//split data in x and y array
+  let getArrayByValue = function (data, key) {
+    let result = [];
+    for (let i in data) {
+      result.push(data[i][key]);
+    }
+    return result;
+  };
+
+  let x = getArrayByValue(data, 'x');
+  let y = getArrayByValue(data, 'y').map(i => Number(i));
+
+//Check data for NaN values
+  CheckNan(y);
+
+  myChart = new Chart("myChart", {
+
+    type: "pie",
+    data: {
+      labels: x,
+      datasets: [{
+        backgroundColor: barColors,
+        data: y
+      }]
+    },
+    options: {
+
+      scales: {
+        x: {
+          title: {
+            color: 'red',
+            display: true,
+            text: xAxes
+          }
+        },
+        y: {
+          title: {
+            color: 'red',
+            display: true,
+            text: yAxes
+          }
+        }
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: chartTitle
+        },
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+
+}
+// Scatterplot creator
+function ScatterPlot() {
+
+  // Checking of the data 
+  checkData(data);
+  myChart = new Chart("myChart", {
+    type: "scatter",
+    data: {
+      datasets: [{
+        pointRadius: 4,
+        pointBackgroundColor: "rgb(0,0,255)",
+        data: data
+      }]
+    },
+    options: {
+
+      scales: {
+        x: {
+          title: {
+            color: 'red',
+            display: true,
+            text: xAxes
+          }
+        },
+        y: {
+          title: {
+            color: 'red',
+            display: true,
+            text: yAxes
+          }
+        }
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: chartTitle
+        },
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+
+}
