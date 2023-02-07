@@ -1,5 +1,6 @@
 <h1>Data-Visualisation</h1>
-Data-Visualisation is a website that allows users to go into depth of importance of Data-Visualisation and what type of charts. Secondly it will contain a chart generator to transform  It will give a detailed timeline of Ceasar political career until his death. it also gives a showcase of legendary battles that influenced his life. View the live site <a href="https://frangidha.github.io/news/index.html" target="_blank" >here</a>
+Data-Visualisation is a website that allows users to go into depth of importance of Data-Visualisation and what type of charts. Secondly it will contain a chart generator to transform a CSV file into a chart.
+<a href="https://frangidha.github.io/Data-Visualisation-/" target="_blank" >here</a>
 
 <h3>Features</h3>
 <ul>
@@ -21,13 +22,12 @@ This will allow the user to go to various social media where they can share the 
 <img src="docs/readme/footer.jpg" alt="footer">
 
 <h3>Landing Page</h3>
-<p>Landing page image
-This is an abstract images that will let think about data visualization and why it important. 
-This will help to immediately show the user what the website is about.
+<p>Landing page 
+hero text will display questions that will let you think about data-vizualization and different type of charts
 </p>
 
 <h3>Website information on 'Home'</h3>
-<p>Information about Data Visualisation and how to format your data and the websites purpose including an images of how to format your data in excel and text editor and turn them into a CSV.
+<p>Information about Data Visualisation and how to format your data. Secondly the websites purpose including an images of how to format your data in excel and text editor and turn them into a CSV.
 This information lets the user know what the site is about.</p>
 
  <img src="docs/readme/landingpage.jpg" alt="picture of the landingpage of the website">
@@ -63,7 +63,7 @@ This information lets the user know what the site is about.</p>
 </ul>
 
 <h3>404 page</h3>
-an error page has been developped in case links are missing or wrong. it has a button that will bring you back to the landing page.
+an error page has been developed in case links are missing or wrong. it has a button that will bring you back to the landing page.
 <img src="docs/readme/404.jpg" alt="picture of 404 page">
 <h3>Features Left to Implement</h3>
 <ul> 
@@ -153,10 +153,6 @@ HTML page lang attribute has been set
 Aria properties have been implemented correctly
 WCAG 2.1 Coding best practices being followed
 Manual tests were also performed to ensure the website was accessible as possible and an accessibility issue was identified.
-
-Issue #1: background images didn't display 
-
-Fix: changed the absolute path way to a relative pathway
 
 <h4>Chart Funtionalities</h4>
 <h5>Chart Generation Scatterplot</h5>
@@ -256,11 +252,11 @@ Fix: changed the absolute path way to a relative pathway
 
 <p>Expected:</p>
 
-<p>Chart will be present afterwards it will be remove from the canvas using the Chart destroy button. You will regenerate the Chart. now the dowload button is clicked and the downloaded as a PNG</p>
+<p>Chart will be present afterwards it will be remove from the canvas using the Chart discard button. You will regenerate the Chart. now the dowload button is clicked and the downloaded as a PNG</p>
 
 <p>Actual:</p>
 
-<p>Chart is being destroyed. Regenerated followed by a download as a PNG</p>
+<p>Chart is being Discarded. Regenerated followed by a download as a PNG</p>
 
 <h4>Chart Types</h4>
 <h5>Chart Type buttons</h5>
@@ -294,9 +290,9 @@ Fix: changed the absolute path way to a relative pathway
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
 
 Navigation Link	Page to Load
-Home Page	       index.html
-Chart Types      graph.html
-Chart Generator	 generator.html
+<p>Home Page	 to       index.html</p>
+<p>Chart Types    to      graph.html</p>
+<p>Chart Generator	 to   generator.html</p>
 
 Links on all pages navigated to the correct pages as exptected.
 
@@ -363,7 +359,7 @@ CSS Validator Results
 <li>Javascript</li>
 <p>No errors were returned when passing through the <a href="https://jshint.com/" target="_blank">JShint validator</a>
 
-<p>A warning appeared for one function as an unused variable but the function is being used directly as an onkeyup event on the destroy Chart and Dowload events.</p>
+<p>A warning appeared for one function as an unused variable but the function is being used directly as an onkeyup event on the Discard Chart and Dowload events.</p>
 <p>variables are undefienied because the user will define them.</p>
 graph.js
 <div>
@@ -400,7 +396,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 <li>From the source section drop-down menu, select the Branch: main</li>
 <li>Click 'Save'</li>
 <li>A live link will be displayed in a green banner when published successfully.</li>
-<li>The live link can be found here - <a href="https://frangidha.github.io/news/index.html" Target = "_blank">https://frangidha.github.io/news/index.html</a></li>
+<li>The live link can be found here - <a href=https://frangidha.github.io/Data-Visualisation-/ Target = "_blank">https://frangidha.github.io/Data-Visualisation-/</a></li>
  </ul>
 
 <h4>Clone the Repository Code Locally</h4>
@@ -414,13 +410,13 @@ Navigate to the GitHub Repository you want to clone to use locally:
 <li>The project will now of been cloned on your local machine for use.</li>
 </ul>
 <h3>Credits</h3>
-<p>chart.js (<a href="https://www.chartjs.org/" target="_blank">link</a>)</p>
-libary was used to create the Charts 
-<p>Code insitute</p>
-the code insitute curriculum was used to develop the entire website.
-<p>GoLinuxCloud (<a href="https://www.golinuxcloud.com/javascript-csv-to-array/#:~:text=Method%2D1%3A%20Use%20split()%20method%20to%20convert%20CSV%20to%20Array,-Before%20we%20go&text=split()%20%2C%20and%20it%20takes,typically%20a%20comma%20(%20%2C%20)." target="_blank">link</a>)</p>
-this method was used to parse the CSV but some changes were made to make it more functional.
-<p>Felix Luciano <a href="https://codepen.io/FelixLuciano" target="_blank">link</a> </p>
-the hero text animation were inspired by and adjusted to meet the requirements of the website. 
+<h5>chart.js (<a href="https://www.chartjs.org/" target="_blank">link</a>)</h5>
+<p>libary was used to create the Charts </p>
+<h5>Code insitute</h5>
+<p>the code insitute curriculum was used to develop the entire website.</p>
+<h5>GoLinuxCloud (<a href="https://www.golinuxcloud.com/javascript-csv-to-array/#:~:text=Method%2D1%3A%20Use%20split()%20method%20to%20convert%20CSV%20to%20Array,-Before%20we%20go&text=split()%20%2C%20and%20it%20takes,typically%20a%20comma%20(%20%2C%20)." target="_blank">link</a>)</h5>
+<p>this method was used to parse the CSV but some changes were made to make it more functional.</p>
+<h5>Felix Luciano (<a href="https://codepen.io/FelixLuciano" target="_blank">link</a>) </h5>
+<p>the hero text animation were inspired by and adjusted to meet the requirements of the website. </p>
 <h3>Media</h3>
-<p>all media were taken form <a href="https://www.shutterstock.com/explore/flex-subscriptions?c3apidt=p68161268801&gclid=EAIaIQobChMI0vGyntaD_AIVjd1RCh05jgE2EAAYASAAEgLsDvD_BwE&gclsrc=aw.ds&kw=free%20pictures">free image sources</a> and <a href="https://venngage.com/blog/data-visualization/">blog of Data-Visualization</a></p>
+<p>all media were taken form <a href="https://www.shutterstock.com/explore/flex-subscriptions?c3apidt=p68161268801&gclid=EAIaIQobChMI0vGyntaD_AIVjd1RCh05jgE2EAAYASAAEgLsDvD_BwE&gclsrc=aw.ds&kw=free%20pictures"> and <a href="https://venngage.com/blog/data-visualization/" target="_blank">free image sources</a>)blog of Data-Visualization</a></p>
