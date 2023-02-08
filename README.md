@@ -1,5 +1,5 @@
 <h1>Data-Visualisation</h1>
-Data-Visualisation is a website that allows users to go into depth of importance of Data-Visualisation and what type of charts. Secondly it will contain a chart generator to transform a CSV file into a chart.
+Data-Visualisation is a website that allows users to go into depth of importance of Data-Visualisation and what type of chart you should use for your data. Secondly it will contain a chart generator to transform a CSV file into a chart.
 <a href="https://frangidha.github.io/Data-Visualisation-/" target="_blank" >here</a>
 
 <h3>Features</h3>
@@ -27,8 +27,8 @@ hero text will display questions that will let you think about data-vizualizatio
 </p>
 
 <h3>Website information on 'Home'</h3>
-<p>Information about Data Visualisation and how to format your data. Secondly the websites purpose including an images of how to format your data in excel and text editor and turn them into a CSV.
-This information lets the user know what the site is about.</p>
+<p>Information about Data Visualisation and how to format your data. Secondly the websites purpose including a images of how to format your data in excel and text editor and turn them into a CSV.
+This information lets the user know what the site is about. Different questions are displayed to let the user think about what could be important for data-visualization</p>
 
  <img src="docs/readme/landingpage.jpg" alt="picture of the landingpage of the website">
 <p>explains why CSV files are often used. Secondly how to structure them for usage</p>
@@ -38,7 +38,7 @@ This information lets the user know what the site is about.</p>
 <h3>Website information on 'Chart Types'</h3>
 <p>It will explain which chart types are good for which applications. (barchart,piechart, lineplot and scatterplot) </p>
 
-<img src="docs/readme/Charttype.jpg" alt="picture of the polical career page">
+<img src="docs/readme/Charttype.jpg" alt="Picture chartype page">
 
 
 <h3>Website information on 'Chart Generator'</h3>
@@ -47,20 +47,6 @@ This information lets the user know what the site is about.</p>
 
 <p>this shows the 2 buttons how to download your made charts and make new one by making free the canvas</p>
 <img src="docs/readme/DownloadDestroy.jpg" alt="picture of dowload and destroy button">
-
-<h3>Existing Features</h3>
-<ul>
-<li>Responsive design</li>
-<li>navigation menu</li>
-<li>Hidden interactive sections on Chart Type page</li>
-<li>information about different type of charts</li>
-<li>CSV reader</li>
-<li>Chart renderer</li>
-<li>Page animations</li>
-<li>check if </li>
-<li>download the created chart</li>
-<li>404 page</li>
-</ul>
 
 <h3>404 page</h3>
 an error page has been developed in case links are missing or wrong. it has a button that will bring you back to the landing page.
@@ -72,14 +58,30 @@ an error page has been developed in case links are missing or wrong. it has a bu
 <li>increase the different types of charts can be generated</li>
 </ul>
 
+<h3>Existing Features</h3>
+<ul>
+<li>Responsive design</li>
+<li>navigation menu</li>
+<li>Hidden interactive sections on Chart Type page</li>
+<li>information about different type of charts</li>
+<li>CSV reader</li>
+<li>Chart renderer</li>
+<li>Page animations</li>
+<li>check datafile for NaN values</li>
+<li>download the created chart</li>
+<li>404 page</li>
+</ul>
+
+
+
 <h3>Design</h3>
 <h4>website design</h4>
 <p>Home page</p>
 <img src="docs/readme/landingpagewireframe.jpg" alt="design of the landing page">
 <p>Chart Type</p>
-<img src="docs/readme/ChartTypeWireframe.jpg" alt="design of the Political Career page">
+<img src="docs/readme/ChartTypeWireframe.jpg" alt="design of the charttype page">
 <p>Chart Generator</p>
-<img src="docs/readme/ChartGeneratorWireframe.jpg" alt="design of the battle page">
+<img src="docs/readme/ChartGeneratorWireframe.jpg" alt="design of the Chart Generator page">
 
 <h4>phone design</h4>
 <p>Home page</p>
@@ -87,7 +89,7 @@ an error page has been developed in case links are missing or wrong. it has a bu
 <p>Chart Type</p>
 <img src="docs/readme/AndriodChartType.jpg" alt="design of the Chart Type page">
 <p>Chart Generator</p>
-<img src="docs/readme/WireFrameChartGenerator.jpg" alt="design of the battle page">
+<img src="docs/readme/WireFrameChartGenerator.jpg" alt="design of Chart Generator page">
 
 <h3>Technologies</h3>
 <ul>
@@ -374,7 +376,7 @@ script.js
 </ul>
 
 <h3>Unfixed Bugs</h3>
-solving the warnings given by JShint validator changing the "For in" to a different method.
+solving the warnings given by JShint validator changing the "For in" to a different method. 
 
 <h3>Deployment</h3>
 <h4>Version Control</h4>
