@@ -128,7 +128,7 @@ async function init () {
     }
     
     async delete (text) {
-      for (character of text) {
+      for (let character of text) {
         this.innerText = this.innerText.slice(0, this.innerText.length -1);
         await sleep(this.typeInterval);
       }
